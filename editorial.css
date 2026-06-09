@@ -986,6 +986,24 @@ img {
     opacity: 1;
   }
 
+  .editorial-shell.is-rail-expanded .side-rail,
+  .editorial-shell:has(.side-rail:hover) .side-rail {
+    width: 100%;
+  }
+
+  .editorial-shell.is-rail-expanded .editorial-main,
+  .editorial-shell:has(.side-rail:hover) .editorial-main {
+    margin-left: 0;
+  }
+
+  .editorial-shell.is-rail-expanded .rail-nav-short,
+  .editorial-shell:has(.side-rail:hover) .rail-nav-short,
+  .editorial-shell.is-rail-expanded .rail-nav-full,
+  .editorial-shell:has(.side-rail:hover) .rail-nav-full {
+    max-width: none;
+    opacity: 1;
+  }
+
   .rail-nav-short {
     display: none;
   }

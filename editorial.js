@@ -295,13 +295,24 @@ const renderImages = () => {
 const initRailInteraction = () => {
   const shell = document.querySelector(".editorial-shell");
   const rail = document.querySelector(".side-rail");
+  const mobileRailMedia = window.matchMedia("(max-width: 860px)");
 
   if (!shell || !rail) {
     return;
   }
 
-  const expand = () => shell.classList.add("is-rail-expanded");
+  const expand = () => {
+    if (!mobileRailMedia.matches) {
+      shell.classList.add("is-rail-expanded");
+    }
+  };
+
   const collapse = () => shell.classList.remove("is-rail-expanded");
+  const syncRailMode = () => {
+    if (mobileRailMedia.matches) {
+      collapse();
+    }
+  };
 
   rail.addEventListener("mouseenter", expand);
   rail.addEventListener("mouseleave", collapse);
@@ -311,6 +322,14 @@ const initRailInteraction = () => {
       collapse();
     }
   });
+
+  syncRailMode();
+
+  if (typeof mobileRailMedia.addEventListener === "function") {
+    mobileRailMedia.addEventListener("change", syncRailMode);
+  } else if (typeof mobileRailMedia.addListener === "function") {
+    mobileRailMedia.addListener(syncRailMode);
+  }
 };
 
 const initActiveNavigation = () => {
