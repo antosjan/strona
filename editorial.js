@@ -301,18 +301,15 @@ const initRailInteraction = () => {
     return;
   }
 
-  const expand = () => {
-    if (!mobileRailMedia.matches) {
-      shell.classList.add("is-rail-expanded");
-    }
-  };
-
   const collapse = () => shell.classList.remove("is-rail-expanded");
-  const syncRailMode = () => {
-    if (mobileRailMedia.matches) {
-      collapse();
-    }
-  };
+  const syncRailMode = () => collapse();
+
+  if (mobileRailMedia.matches) {
+    collapse();
+    return;
+  }
+
+  const expand = () => shell.classList.add("is-rail-expanded");
 
   rail.addEventListener("mouseenter", expand);
   rail.addEventListener("mouseleave", collapse);
@@ -322,8 +319,6 @@ const initRailInteraction = () => {
       collapse();
     }
   });
-
-  syncRailMode();
 
   if (typeof mobileRailMedia.addEventListener === "function") {
     mobileRailMedia.addEventListener("change", syncRailMode);
