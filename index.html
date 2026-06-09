@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Editorial portfolio layout for Jan Antos with projects, design work, and photography."
+  >
+  <title>Jan Antos | Editorial Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=League+Spartan:wght@500;700;800&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="editorial.css?v=20260609d">
+  <script defer src="editorial-data.js?v=20260609d"></script>
+  <script defer src="editorial.js?v=20260609d"></script>
+</head>
+<body>
+  <div class="editorial-shell">
+    <aside class="side-rail">
+      <a class="rail-logo" href="#home" id="rail-logo"></a>
+
+      <nav class="rail-nav" id="rail-nav"></nav>
+
+      <div class="rail-socials">
+        <a class="rail-icon" id="github-link" target="_blank" rel="noreferrer" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2C6.48 2 2 6.59 2 12.26c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-1.04-.01-1.89-2.78.62-3.36-1.21-3.36-1.21-.46-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .08 1.53 1.06 1.53 1.06.9 1.57 2.36 1.12 2.94.86.09-.67.35-1.12.63-1.37-2.22-.26-4.56-1.14-4.56-5.09 0-1.13.39-2.05 1.03-2.77-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.06A9.34 9.34 0 0 1 12 7.24a9.3 9.3 0 0 1 2.5.35c1.9-1.34 2.74-1.06 2.74-1.06.56 1.42.21 2.47.11 2.73.64.72 1.03 1.64 1.03 2.77 0 3.96-2.34 4.82-4.58 5.07.36.32.68.95.68 1.92 0 1.39-.01 2.5-.01 2.84 0 .27.18.6.69.49A10.27 10.27 0 0 0 22 12.26C22 6.59 17.52 2 12 2Z"></path>
+          </svg>
+        </a>
+        <a class="rail-icon" id="linkedin-link" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6.94 8.5A1.56 1.56 0 1 1 6.95 5.4a1.56 1.56 0 0 1-.01 3.1ZM5.58 9.7h2.74V18H5.58V9.7Zm4.45 0h2.63v1.13h.04c.37-.7 1.26-1.43 2.6-1.43 2.79 0 3.3 1.87 3.3 4.3V18h-2.74v-3.82c0-.91-.02-2.08-1.24-2.08-1.24 0-1.43.98-1.43 2v3.9h-2.74V9.7Z"></path>
+          </svg>
+        </a>
+        <a class="rail-icon" id="mail-link" aria-label="Email">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 6.75A1.75 1.75 0 0 1 4.75 5h14.5A1.75 1.75 0 0 1 21 6.75v10.5A1.75 1.75 0 0 1 19.25 19H4.75A1.75 1.75 0 0 1 3 17.25V6.75Zm1.75-.25a.25.25 0 0 0-.25.25v.18l7.5 4.9 7.5-4.9v-.18a.25.25 0 0 0-.25-.25H4.75Zm14.75 2.22-6.98 4.56a1 1 0 0 1-1.04 0L4.5 8.72v8.53c0 .14.11.25.25.25h14.5a.25.25 0 0 0 .25-.25V8.72Z"></path>
+          </svg>
+        </a>
+      </div>
+    </aside>
+
+    <main class="editorial-main">
+      <section class="editorial-section hero-section" id="home">
+        <div class="section-marker">
+          <span>01</span>
+          <span>Home</span>
+        </div>
+
+        <div class="section-body hero-grid">
+          <div class="hero-portrait-card">
+            <img id="hero-photo" alt="">
+          </div>
+
+          <div class="hero-copy">
+            <h1 id="hero-name"></h1>
+            <p class="hero-role" id="hero-role"></p>
+            <p class="hero-intro" id="hero-intro"></p>
+
+            <div class="hero-actions">
+              <a class="hero-button hero-button-dark" href="#projects">View Projects</a>
+              <a class="hero-button" href="#contact" id="hero-cv-link">Download CV</a>
+            </div>
+
+            <div class="hero-tools" id="hero-tools"></div>
+          </div>
+
+          <div class="hero-side-copy">
+            <p id="hero-statement"></p>
+            <span>Seoul</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="editorial-section about-section" id="about">
+        <div class="section-marker">
+          <span>02</span>
+          <span>About</span>
+        </div>
+
+        <div class="section-body about-grid">
+          <div class="about-copy">
+            <div class="about-text" id="about-text"></div>
+            <p class="signature" id="signature"></p>
+          </div>
+
+          <div class="about-education" id="education-list"></div>
+
+          <div class="about-image-card">
+            <img id="about-side-image" alt="">
+          </div>
+        </div>
+      </section>
+
+      <section class="editorial-section projects-section" id="projects">
+        <div class="section-marker">
+          <span>03</span>
+          <span>Projects</span>
+        </div>
+
+        <div class="section-body">
+          <div class="card-grid four-col" id="project-grid"></div>
+        </div>
+      </section>
+
+      <section class="editorial-section design-section" id="design">
+        <div class="section-marker">
+          <span>04</span>
+          <span>Design</span>
+        </div>
+
+        <div class="section-body">
+          <div class="section-topline">
+            <div></div>
+            <a class="section-link" href="#contact">View selected design work</a>
+          </div>
+          <div class="card-grid four-col" id="design-grid"></div>
+        </div>
+      </section>
+
+      <section class="editorial-section photo-section" id="photo">
+        <div class="section-marker">
+          <span>05</span>
+          <span>Photography</span>
+        </div>
+
+        <div class="section-body">
+          <div class="section-topline">
+            <div></div>
+            <a class="section-link" href="#contact">View all photos</a>
+          </div>
+          <div class="card-grid five-col photo-grid" id="photo-grid"></div>
+        </div>
+      </section>
+
+      <section class="editorial-section contact-section" id="contact">
+        <div class="section-marker">
+          <span>06</span>
+          <span>Contact</span>
+        </div>
+
+        <div class="section-body contact-grid">
+          <div class="contact-headline">
+            <h2>Let's Work Together</h2>
+          </div>
+
+          <div class="contact-details">
+            <div class="contact-item">
+              <span>Email</span>
+              <a id="contact-email"></a>
+            </div>
+            <div class="contact-item">
+              <span>Phone</span>
+              <a id="contact-phone"></a>
+            </div>
+            <div class="contact-item">
+              <span>Location</span>
+              <p id="contact-location"></p>
+            </div>
+          </div>
+
+          <div class="contact-links">
+            <p>Let's Connect</p>
+            <a id="contact-linkedin" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a id="contact-github" target="_blank" rel="noreferrer">GitHub</a>
+            <a id="contact-cv" href="#contact">Download CV</a>
+          </div>
+
+          <div class="contact-image-card">
+            <img id="contact-image" alt="">
+          </div>
+        </div>
+      </section>
+
+      <footer class="editorial-footer">
+        <p id="footer-mark"></p>
+        <p>&copy; 2026 Jan Antos</p>
+        <p>Designed &amp; Developed by Jan Antos</p>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
