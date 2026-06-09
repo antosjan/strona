@@ -219,6 +219,23 @@ const renderLinks = () => {
   const contactGithub = getById("contact-github");
   const heroCvLink = getById("hero-cv-link");
   const contactCv = getById("contact-cv");
+  const configureCvLink = (link) => {
+    if (!link) {
+      return;
+    }
+
+    if (personal.cvFile) {
+      link.href = personal.cvFile;
+      link.setAttribute("target", "_blank");
+      link.setAttribute("rel", "noreferrer");
+      link.setAttribute("download", "");
+    } else {
+      link.href = "#contact";
+      link.removeAttribute("target");
+      link.removeAttribute("rel");
+      link.removeAttribute("download");
+    }
+  };
 
   if (githubLink) {
     githubLink.href = personal.github;
@@ -250,15 +267,8 @@ const renderLinks = () => {
     contactGithub.href = personal.github;
   }
 
-  const cvTarget = personal.cvFile || "#contact";
-
-  if (heroCvLink) {
-    heroCvLink.href = cvTarget;
-  }
-
-  if (contactCv) {
-    contactCv.href = cvTarget;
-  }
+  configureCvLink(heroCvLink);
+  configureCvLink(contactCv);
 };
 
 const renderImages = () => {

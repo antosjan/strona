@@ -14,7 +14,7 @@ window.editorialPortfolioData = {
     location: "Czestochowa, Poland",
     linkedin: "https://www.linkedin.com/in/antos-jan",
     github: "https://github.com/antosjan",
-    cvFile: "",
+    cvFile: "Jan-Antos-CV.pdf",
     heroPhoto: "portfolio/images/editorial-portrait.jpg",
     aboutPhoto: "portfolio/images/editorial-portrait.jpg",
     sideArchitecture: "portfolio/images/zdjecia/IMG_1341.JPEG",
