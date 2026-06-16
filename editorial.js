@@ -143,6 +143,33 @@ const projectMediaMarkup = (variant) => {
           </div>
         </div>
       `;
+    case "prototype":
+      return `
+        <div class="project-mockup project-mockup-prototype">
+          <div class="prototype-canvas">
+            <div class="prototype-phone prototype-phone-left">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="prototype-phone prototype-phone-main">
+              <div class="prototype-notch"></div>
+              <div class="prototype-avatar"></div>
+              <div class="prototype-line wide"></div>
+              <div class="prototype-line"></div>
+              <div class="prototype-actions">
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <div class="prototype-flow">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      `;
     case "multimedia":
       return `
         <div class="project-mockup project-mockup-multimedia">

@@ -73,11 +73,12 @@ window.editorialPortfolioData = {
       url: "https://github.com/antosjan/school-register"
     },
     {
-      title: "Sports Teams",
+      title: "Promotly UI Prototype",
       description:
-        "A clean team management interface built around sports data, player organization, and API-driven content.",
-      stack: ["React", "TypeScript", "REST API"],
-      variant: "sports"
+        "A mobile-first UI/UX prototype for a product concept, covering user flows, interface structure, and usability evaluation.",
+      stack: ["Figma", "UI/UX", "Prototype", "User Flow"],
+      variant: "prototype",
+      url: "https://www.figma.com/proto/vlgWh9TQbIhLNzdvAX8fQB/Prototype?node-id=4003-1730&p=f&t=ZZq1lUgEsyoqrqOU-1&scaling=scale-down&content-scaling=fixed&page-id=4003%3A1664"
     },
     {
       title: "Multimedia Systems",
