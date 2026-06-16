@@ -120,6 +120,29 @@ const projectMediaMarkup = (variant) => {
           </div>
         </div>
       `;
+    case "school":
+      return `
+        <div class="project-mockup project-mockup-school">
+          <div class="school-ledger">
+            <div class="school-ledger-title">SR</div>
+            <div class="school-ledger-grid">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="school-ledger-roles">
+              <span>ADMIN</span>
+              <span>TEACHER</span>
+              <span>STUDENT</span>
+            </div>
+          </div>
+        </div>
+      `;
     case "multimedia":
       return `
         <div class="project-mockup project-mockup-multimedia">
@@ -151,9 +174,14 @@ const projectMediaMarkup = (variant) => {
 
 const renderProjects = () => {
   const markup = arrayOrEmpty(editorialData.projectCards)
-    .map(
-      (project, index) => `
-        <article class="project-card-editorial">
+    .map((project, index) => {
+      const tagName = project.url ? "a" : "article";
+      const linkAttributes = project.url
+        ? ` href="${project.url}" target="_blank" rel="noreferrer"`
+        : "";
+
+      return `
+        <${tagName} class="project-card-editorial"${linkAttributes}>
           ${projectMediaMarkup(project.variant)}
           <div class="project-heading">
             <span class="project-index">${String(index + 1).padStart(2, "0")}</span>
@@ -164,9 +192,9 @@ const renderProjects = () => {
             ${arrayOrEmpty(project.stack).map((item) => `<span>${item}</span>`).join("")}
           </div>
           <span class="project-arrow">&#8594;</span>
-        </article>
-      `
-    )
+        </${tagName}>
+      `;
+    })
     .join("");
 
   setInnerHtml("project-grid", markup);

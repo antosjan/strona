@@ -23,7 +23,7 @@ window.editorialPortfolioData = {
 
   hero: {
     statement: "Building digital experiences through code & design.",
-    tools: ["Python", "React", "TypeScript", "Figma", "UI Design"]
+    tools: ["C#", "ASP.NET Core", "Python", "React", "TypeScript", "Figma"]
   },
 
   about: {
@@ -61,7 +61,16 @@ window.editorialPortfolioData = {
       description:
         "A privacy-focused application for medical data processing with encrypted workflows and structured data handling.",
       stack: ["Python", "Flask", "TenSEAL", "SQLite"],
-      variant: "medical"
+      variant: "medical",
+      url: "https://github.com/antosjan/medical-he-app"
+    },
+    {
+      title: "SchoolRegister",
+      description:
+        "A role-based school management system for students, teachers, groups, subjects, and grade reporting.",
+      stack: ["C#", "ASP.NET Core", "EF Core", "Identity", "xUnit"],
+      variant: "school",
+      url: "https://github.com/antosjan/school-register"
     },
     {
       title: "Sports Teams",
@@ -75,14 +84,8 @@ window.editorialPortfolioData = {
       description:
         "An interactive visual concept built around animated forms, motion, and responsive multimedia presentation.",
       stack: ["JavaScript", "Canvas", "SVG"],
-      variant: "multimedia"
-    },
-    {
-      title: "Flutter Task Manager",
-      description:
-        "A mobile task manager concept focused on prioritization, clean organization, and intuitive daily planning.",
-      stack: ["Flutter", "Dart", "SQLite"],
-      variant: "flutter"
+      variant: "multimedia",
+      url: "https://github.com/antosjan/multimedia-systems"
     }
   ],
 

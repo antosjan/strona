@@ -531,6 +531,23 @@ img {
   gap: 12px;
 }
 
+.project-card-editorial {
+  color: inherit;
+  text-decoration: none;
+}
+
+.project-card-editorial[href] {
+  cursor: pointer;
+}
+
+.project-card-editorial[href] .project-arrow {
+  transition: transform 180ms ease;
+}
+
+.project-card-editorial[href]:hover .project-arrow {
+  transform: translateX(8px);
+}
+
 .project-heading {
   display: flex;
   align-items: baseline;
@@ -680,6 +697,53 @@ img {
 .sports-stats span {
   height: 10px;
   background: rgba(255, 255, 255, 0.14);
+}
+
+.project-mockup-school {
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.22), transparent 28%),
+    linear-gradient(135deg, #151515 0%, #2d2d2d 100%);
+}
+
+.school-ledger {
+  width: 82%;
+  height: 72%;
+  padding: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.school-ledger-title {
+  color: #ffffff;
+  font-size: 2.4rem;
+  font-weight: 800;
+  letter-spacing: -0.08em;
+  line-height: 0.8;
+}
+
+.school-ledger-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-top: 22px;
+}
+
+.school-ledger-grid span {
+  height: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.school-ledger-roles {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 18px;
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
 }
 
 .project-mockup-multimedia {
