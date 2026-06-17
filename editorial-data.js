@@ -10,7 +10,7 @@ window.editorialPortfolioData = {
     intro:
       "I build digital products and web experiences by combining programming, interface design, and a strong sense of visual structure.",
     email: "antosjj@outlook.com",
-    phone: "+48 885 765 367",
+    phone: "+48 885 765 378",
     location: "Czestochowa, Poland",
     linkedin: "https://www.linkedin.com/in/antos-jan",
     github: "https://github.com/antosjan",

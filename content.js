@@ -9,7 +9,7 @@ window.portfolioData = {
     name: "Jan Antos",
     role: "Computer Science Engineer / Frontend / Branding",
     email: "antosjj@outlook.com",
-    phone: "+48 885 765 367",
+    phone: "+48 885 765 378",
     location: "Czestochowa, Poland",
     linkedin: "https://www.linkedin.com/in/antos-jan",
     github: "https://github.com/antosjan",
