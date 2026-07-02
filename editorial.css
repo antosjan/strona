@@ -1249,7 +1249,7 @@ img {
 
   .hero-grid {
     min-height: 0;
-    padding-right: 0;
+    padding-inline: 18px;
   }
 
   .hero-portrait-card {
